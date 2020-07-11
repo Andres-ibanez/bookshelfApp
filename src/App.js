@@ -7,6 +7,7 @@ import AddBook from './components/AddBook'
 import { Link, Route } from 'react-router-dom'
 
 class BooksApp extends React.Component {
+    //Manejando el estado dentro de class components
     state = {
         categorys: {
             currentlyReading: 'Currently Reading',
@@ -16,6 +17,7 @@ class BooksApp extends React.Component {
         books: []
     }
 
+    //Siempre se ejecta cuando se inicia el codigo.
     componentDidMount() {
         BooksAPI.getAll()
             .then(books => {
@@ -48,6 +50,7 @@ class BooksApp extends React.Component {
                         <Header />
                         <div className="list-books-content">
                             <div>
+                                {/* Pasando parametros a traves de los props */}
                                 <BookShelf books={this.state.books} categorys={this.state.categorys} update={this.updateBooks} />
                             </div>
                         </div>

@@ -4,6 +4,8 @@
 
 This is the final assessment project for Udacity's React Fundamentals course, is a bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. The project emphasizes using React to build the application
 
+online: *https://bookshelfapp.netlify.app/*
+
 ## Installation
 
 ├──Type *npm install* to install all dependencies.

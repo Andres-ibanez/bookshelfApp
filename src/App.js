@@ -44,7 +44,7 @@ class BooksApp extends React.Component {
     render() {
         return (
             <div className="app">
-            {//Route perfime informar rota, componente, etc.}
+            //Route perfime informar rota, componente, etc.
                 <Route exact path='/' render={() => (
                     <div className="list-books">
                         <Header />

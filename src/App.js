@@ -7,7 +7,7 @@ import AddBook from './components/AddBook'
 import { Link, Route } from 'react-router-dom'
 
 class BooksApp extends React.Component {
-    //Manejando el estado dentro de class components
+    {//Manejando el estado dentro de class components}
     state = {
         categorys: {
             currentlyReading: 'Currently Reading',
@@ -17,7 +17,7 @@ class BooksApp extends React.Component {
         books: []
     }
 
-    //Siempre se ejecta cuando se inicia el codigo.
+    {//Siempre se ejecta cuando se inicia el codigo.}
     componentDidMount() {
         BooksAPI.getAll()
             .then(books => {
@@ -36,15 +36,15 @@ class BooksApp extends React.Component {
             this.setState(currentState => ({
                 books: currentState.books.map(book => book.title === bookUpdate.title ? { ...book, shelf: shelfUpdate } : book)
             }))
-        //console.log(this.state.books, 'update', bookUpdate)
-        //Atualizando os dados usando metodo da API
+        {//console.log(this.state.books, 'update', bookUpdate)}
+        {//Atualizando os dados usando metodo da API}
         BooksAPI.update(bookUpdate, shelfUpdate)
     }
 
     render() {
         return (
             <div className="app">
-            //Route perfime informar rota, componente, etc.
+            {//Route perfime informar rota, componente, etc.}
                 <Route exact path='/' render={() => (
                     <div className="list-books">
                         <Header />

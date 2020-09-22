@@ -7,7 +7,9 @@ Este é um projeto teste em desenvolvimento, feito com React e Redux, é um apli
 ## Instalação
 
 ├── Digite * yarn install * para instalar todas as dependências.
+
 ├── Escreva * yarn start * para executar o aplicativo localmente.
+
 └── Abra * http: // localhost: 3000 * para exibi-lo no navegador.
 
 ## Uso

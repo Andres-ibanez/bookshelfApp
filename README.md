@@ -1,25 +1,33 @@
-# Gerenciamento de Funcionarios #
+# MyReads Project #
 
-## Descrição
+## Description
 
-Este é um projeto teste em desenvolvimento, feito com React e Redux, é um aplicativo cadastro de funcionarios, no qual pode cadastras os funcionarios e todos seus dados são guardados na memoria local.
+This is the final assessment project for Udacity's React Fundamentals course, is a bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. The project emphasizes using React to build the application
 
-## Instalação
+online: *https://bookshelfapp.netlify.app/*
 
-├── Digite * yarn install * para instalar todas as dependências.
+## Installation
 
-├── Escreva * yarn start * para executar o aplicativo localmente.
+├──Type *npm install* to install all dependencies.
+├──Type *npm start* to run the app locally.
+└──Open *http://localhost:3000* to view it in the browser.
 
-└── Abra * http: // localhost: 3000 * para exibi-lo no navegador.
+## Usage
 
-## Uso
+In this application, the main page displays a list of "shelves" (i.e. categories), each of which contains a number of books. The three shelves are:
 
-Neste aplicativo, a página principal exibe uma lista de "funcionarios" caso já tenha cadastrado algum, se não você tem a opção de cadastrar um novo funcioario e ele aparecera listado depois, onde se você quiser, poderá ser apagado.
+├── Currently Reading
+├── Want to Read
+└── Read
 
-## Apoio, suporte
+Each book has a control that lets you select the shelf for that book. When you select a different shelf, the book moves there. Note that the default value for the control should always be the current shelf the book is in.
 
-Abra uma issue para obter suporte.
+The search page has a text input that may be used to find books. As the value of the text input changes, the books that match that query are displayed on the page, along with a control that lets you add the book to your library.
 
-## Contribuindo
+## Support
 
-Crie uma branch, adicione commits e abra uma pull request.
+Please open an issue for support.
+
+## Contributing
+
+Create a branch, add commits, and open a pull request.
